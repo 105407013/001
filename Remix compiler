@@ -1,0 +1,11 @@
+pragma solidity ^0.4.21;
+
+contract Storage {
+    uint data;
+    function set(uint x)public{
+        data =x;
+    }
+    function get() public constant returns (uint) {
+        return data;
+    }
+}
